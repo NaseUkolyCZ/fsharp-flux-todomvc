@@ -37,7 +37,7 @@
     "time-grunt": "^1.0.0"
   },
   "scripts": {
-    "start": "watchify -o js/bundle.js -v -d ../../paket-files/facebook/flux/examples/flux-todomvc/js/app.js",
+    "start": "watchify -o js/bundle.js -v -d js/app.js",
     "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js",
     "test": "jest"
   },

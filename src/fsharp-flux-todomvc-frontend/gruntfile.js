@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='uglify:my_target, copy:main' ProjectOpened='bower:install' />
+﻿/// <binding BeforeBuild='uglify:my_target, copy:index, copy:bundle' ProjectOpened='bower:install' />
 module.exports = function (grunt) {
     // load Grunt plugins from NPM
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -34,9 +34,13 @@ module.exports = function (grunt) {
         },
 
         copy: {
-            main: {
+            index: {
                 src: '../../paket-files/facebook/flux/examples/flux-todomvc/index.html',
                 dest: 'wwwroot/index.html',
+            },
+            bundle: {
+                src: '../../paket-files/facebook/flux/examples/flux-todomvc/js/bundle.js',
+                dest: 'wwwroot/js/bundle.js',
             },
         },
 
