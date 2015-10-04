@@ -5,6 +5,15 @@ choco install python2 -y
 
 call npm install -g grunt-cli bower
 
+cd paket-files\facebook\flux\examples\flux-todomvc
+call npm install
+call npm run build
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+
 cd src\fsharp-flux-todomvc-frontend
 
 call npm install grunt
