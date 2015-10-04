@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "fsharp-flux-todomvc-frontend"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "West Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "84066583-b323-40b0-ab2b-c7314ad9b493"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-WestEurope"
+  }
+}
