@@ -1,0 +1,54 @@
+{
+  "name": "fsharp-flux-todomvc",
+  "version": "0.0.1",
+  "description": "Example Flux architecture with FSharp server",
+  "repository": "https://github.com/NaseUkolyCZ/fsharp-flux-todomvc",
+  "main": "js/app.js",
+  "dependencies": {
+    "classnames": "^2.1.3",
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "react": "^0.12.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "envify": "^3.0.0",
+    "jest-cli": "^0.4.3",
+    "reactify": "^0.15.2",
+    "uglify-js": "~2.4.15",
+    "watchify": "^2.1.1",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-filerev": "^2.0.0",
+    "grunt-usemin": "^2.4.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^0.6.0",
+    "lodash": "~2.4.1",
+    "time-grunt": "^1.0.0"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d ../../paket-files/facebook/flux/examples/flux-todomvc/js/app.js",
+    "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js",
+    "test": "jest"
+  },
+  "author": "Bill Fisher",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  }
+}

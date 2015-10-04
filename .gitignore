@@ -189,3 +189,13 @@ paket-files
 docs/content/license.md
 docs/content/release-notes.md
 .fake
+
+node_modules
+wwwroot
+FSharp.Formatting.svclog
+iisexpress-template.config
+bower_components
+page.js
+lib/
+
+setup_done.txt

@@ -24,3 +24,6 @@ GITHUB
   specs:
     modules/Octokit/Octokit.fsx (4915c909c91e6f715b340d2b368e1601348a362a)
       Octokit
+  remote: facebook/flux
+  specs:
+    FULLPROJECT (e0a52d0dada7b78e7197026dc8cf35d84991f0e8)
